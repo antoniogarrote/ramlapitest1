@@ -1,0 +1,14 @@
+#%RAML 1.0
+
+title: test 1
+
+types:
+  User: !include types/user.raml
+    
+
+/user:
+  get:
+    responses:       
+      200:
+        body:
+          application/json: User
